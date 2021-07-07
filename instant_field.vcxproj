@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5117F115-5E14-4EF9-A2A7-1A65F25B4439}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>instant_field</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\nanogui\include;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\nanogui\ext\eigen;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\nanogui\ext\glad\include;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\nanogui\ext\glfw\include;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\nanogui\ext\nanovg\src;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\tbb\include;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\half;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\rply;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\dset;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\pcg32;C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\pss;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Users\Administrator\Desktop\论文源码\instant-meshes\builds\ext_build\nanogui\Debug\nanogui.lib;C:\Users\Administrator\Desktop\论文源码\instant-meshes\builds\ext_build\tbb\Debug\tbb_static_debug.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="aabb.h" />
+    <ClInclude Include="adjacency.h" />
+    <ClInclude Include="batch.h" />
+    <ClInclude Include="bvh.h" />
+    <ClInclude Include="cleanup.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="dedge.h" />
+    <ClInclude Include="extract.h" />
+    <ClInclude Include="field.h" />
+    <ClInclude Include="glutil.h" />
+    <ClInclude Include="hierarchy.h" />
+    <ClInclude Include="meshio.h" />
+    <ClInclude Include="meshstats.h" />
+    <ClInclude Include="normal.h" />
+    <ClInclude Include="reorder.h" />
+    <ClInclude Include="resources.h" />
+    <ClInclude Include="serializer.h" />
+    <ClInclude Include="smoothcurve.h" />
+    <ClInclude Include="subdivide.h" />
+    <ClInclude Include="viewer.h" />
+    <ClInclude Include="widgets.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adjacency.cpp" />
+    <ClCompile Include="batch.cpp" />
+    <ClCompile Include="bvh.cpp" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\论文源码\instant-meshes\ext\rply\rply.c" />
+    <ClCompile Include="cleanup.cpp" />
+    <ClCompile Include="dedge.cpp" />
+    <ClCompile Include="extract.cpp" />
+    <ClCompile Include="field.cpp" />
+    <ClCompile Include="glutil.cpp" />
+    <ClCompile Include="hierarchy.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="meshio.cpp" />
+    <ClCompile Include="meshstats.cpp" />
+    <ClCompile Include="normal.cpp" />
+    <ClCompile Include="reorder.cpp" />
+    <ClCompile Include="resources.cpp" />
+    <ClCompile Include="serializer.cpp" />
+    <ClCompile Include="smoothcurve.cpp" />
+    <ClCompile Include="subdivide.cpp" />
+    <ClCompile Include="viewer.cpp" />
+    <ClCompile Include="widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\comb.png" />
+    <Image Include="resources\instantmeshes.png" />
+    <Image Include="resources\loadmesh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\shader_flowline.frag" />
+    <None Include="resources\shader_flowline.vert" />
+    <None Include="resources\shader_lines.frag" />
+    <None Include="resources\shader_lines.vert" />
+    <None Include="resources\shader_mesh.frag" />
+    <None Include="resources\shader_mesh.geo" />
+    <None Include="resources\shader_mesh.vert" />
+    <None Include="resources\shader_orientation_field.frag" />
+    <None Include="resources\shader_orientation_field.geo" />
+    <None Include="resources\shader_orientation_field.vert" />
+    <None Include="resources\shader_point.geo" />
+    <None Include="resources\shader_point.vert" />
+    <None Include="resources\shader_position_field.frag" />
+    <None Include="resources\shader_position_field.vert" />
+    <None Include="resources\shader_quadmesh.frag" />
+    <None Include="resources\shader_quadmesh.vert" />
+    <None Include="resources\shader_singularity.frag" />
+    <None Include="resources\shader_singularity.geo" />
+    <None Include="resources\shader_singularity.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
